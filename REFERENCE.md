@@ -61,6 +61,9 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `:Octo pr list` - List GitHub pull requests  
 `:Octo pr view` - View current PR in buffer  
 `:Octo pr comments` - Show PR comments
+`:Octo review start` - Start a PR review
+`:Octo review submit` - Submit a PR review with ability to add a final comment
+`<C-b>` - Opens PR in browser on Octo list or with PR buffer active
 
 ## Search and Replace
 
