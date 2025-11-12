@@ -1,35 +1,46 @@
 return {
   "pwntester/octo.nvim",
+  cmd = "Octo",
+  opts = {
+    -- or "fzf-lua" or "snacks"
+    picker = "telescope",
+    -- bare Octo command opens picker of commands
+    enable_builtin = true,
+  },
+  keys = {
+    {
+      "<leader>oi",
+      "<CMD>Octo issue list<CR>",
+      desc = "List GitHub Issues",
+    },
+    {
+      "<leader>op",
+      "<CMD>Octo pr list<CR>",
+      desc = "List GitHub PullRequests",
+    },
+    {
+      "<leader>od",
+      "<CMD>Octo discussion list<CR>",
+      desc = "List GitHub Discussions",
+    },
+    {
+      "<leader>on",
+      "<CMD>Octo notification list<CR>",
+      desc = "List GitHub Notifications",
+    },
+    {
+      "<leader>os",
+      function()
+        require("octo.utils").create_base_search_command({ include_current_repo = true })
+      end,
+      desc = "Search GitHub",
+    },
+  },
   dependencies = {
     "nvim-lua/plenary.nvim",
     "nvim-telescope/telescope.nvim",
+    -- OR "ibhagwan/fzf-lua",
+    -- OR "folke/snacks.nvim",
     "nvim-tree/nvim-web-devicons",
   },
-  cmd = "Octo",
-  config = function()
-    require("octo").setup({
-      default_remote = { "origin" },
-      ssh_aliases = {},
-      reaction_viewer_hint_icon = "",
-      user_icon = " ",
-      timeline_marker = "",
-      timeline_indent = 2,
-      github_hostname = "",
-      snippet_context_lines = 4,
-      timeout = 5000,
-      ui = {
-        use_signcolumn = true,
-      },
-      pull_requests = {
-        order_by = {
-          field = "CREATED_AT",
-          direction = "DESC",
-        },
-      },
-      file_panel = {
-        size = 10,
-        use_icons = true,
-      },
-    })
-  end,
 }

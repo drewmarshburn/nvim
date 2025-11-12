@@ -173,6 +173,7 @@ The `<leader>` key is `<Space>` by default in LazyVim.
 - `<C-x>` = Ctrl+x
 - `<S-x>` = Shift+x  
 - `<leader>` = Space (by default)
+- `<localleader>` = \
 - `<CR>` = Enter/Return
 - `<Esc>` = Escape
 
