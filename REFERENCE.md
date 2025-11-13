@@ -188,6 +188,20 @@ The `<leader>` key is `<Space>` by default in LazyVim.
 7. **Auto-save**: Enabled on focus loss - changes save when you switch to browser
 8. **Search in files**: `<leader>fg` then type, results update live
 
+## Internals
+
+### Overrides
+
+When you create a plugin spec with the same plugin name as a core LazyVim plugin, your opts table
+gets merged with the defaults. This lets you extend plugin configs without losing LazyVim's default
+configurations.
+
+See `plugins/conform.lua` for an example.
+
+### Plugins
+
+Plugins are installed here: `~/.local/share/nvim/lazy`.
+
 ## Project-Specific Workflows
 
 ### Editing Go Handler
