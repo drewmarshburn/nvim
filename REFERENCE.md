@@ -12,6 +12,10 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader><leader>` - Switch to last buffer (quick toggle)
 `gx` - Goto URL
 
+## Selection
+
+`vi{` - Select block within the angle bracket "{"
+
 ## Window Management
 
 `<C-h>` - Move to left window  
