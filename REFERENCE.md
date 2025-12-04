@@ -23,7 +23,7 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<C-k>` - Move to window above  
 `<C-l>` - Move to right window  
 `<leader>w-` - Split window horizontally  
-`<leader>w|` - Split window vertically  
+`<leader>wv` - Split window vertically
 `<leader>wd` - Close current window  
 `<C-Up>` - Increase window height  
 `<C-Down>` - Decrease window height  
