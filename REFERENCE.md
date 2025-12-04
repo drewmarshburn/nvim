@@ -119,7 +119,7 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<S-h>` - Previous buffer  
 `<S-l>` - Next buffer  
 `<leader>bd` - Delete current buffer  
-`<leader>bD` - Delete all buffers except current  
+`<leader>bo` - Delete all buffers except current  
 `<leader>bp` - Pin/unpin buffer (prevent accidental close)
 
 ## Marks
