@@ -11,6 +11,7 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader>e` - Toggle file explorer (Neo-tree)  
 `<leader><leader>` - Switch to last buffer (quick toggle)
 `gx` - Goto URL
+`Y` - Copy absolute filepath (neo-tree with Lazy shortcut)
 
 ## Selection
 
