@@ -182,6 +182,13 @@ The `<leader>` key is `<Space>` by default in LazyVim.
 - `<CR>` = Enter/Return
 - `<Esc>` = Escape
 
+## Sorting
+
+- :sort - Ascending alphabetical sort
+- :%sort! - Descending alphabetical sort
+- :%sort u - Removes duplicates
+- :sort n - Numeric sorting
+
 ## Tips
 
 1. **Telescope fuzzy finding**: In find files (`<leader>ff`), type parts of filename, use spaces to separate terms
