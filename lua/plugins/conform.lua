@@ -17,6 +17,8 @@ return {
     formatters_by_ft = {
       -- Add Prettier as the JSON formatter
       json = { "prettier" },
+      -- NOTE: Use reference-style links to help with linebreaks when doing md
+      -- formatting
       markdown = { "prettier" },
     },
   },
