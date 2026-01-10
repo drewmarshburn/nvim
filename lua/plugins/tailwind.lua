@@ -17,8 +17,10 @@
 -- The LSP reads tailwind.config.js and static/css/input.css to provide
 -- context-aware completions specific to the project's custom theme.
 
+-- NOTE: I should manage this via LazyExtras because it is causing import order
+-- errors when I start nvim.
 return {
   -- Import LazyVim's Tailwind CSS extras bundle
   -- Includes: tailwindcss-language-server, class sorting, and IntelliSense
-  { import = "lazyvim.plugins.extras.lang.tailwindcss" },
+  -- { import = "lazyvim.plugins.extras.lang.tailwindcss" },
 }

@@ -13,8 +13,11 @@
 --   - Business logic in internal/services/
 --   - Standard library packages throughout the codebase
 
+-- NOTE: I should manage this via LazyExtras because it is causing import order
+-- errors when I start nvim.
+
 return {
   -- Import LazyVim's complete Go extras bundle
   -- Includes: gopls, gofmt, goimports, delve, and go.nvim
-  { import = "lazyvim.plugins.extras.lang.go" },
+  --  { import = "lazyvim.plugins.extras.lang.go" },
 }

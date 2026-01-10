@@ -22,7 +22,9 @@
 
 return {
   -- Import LazyVim's DAP core (includes nvim-dap and UI)
-  { import = "lazyvim.plugins.extras.dap.core" },
+  -- NOTE: I should manage this via LazyExtras because it is causing import order
+  -- errors when I start nvim.
+  -- { import = "lazyvim.plugins.extras.dap.core" },
 
   -- Add Go-specific debugging support
   {
