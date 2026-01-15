@@ -9,3 +9,6 @@ brew "tmux"
 # Imagemagick is used for diagram.nvim diagram rendering
 brew "imagemagick"
 
+# fd is a find alternative used by venv-selector.nvim
+brew "fd"
+

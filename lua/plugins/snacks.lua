@@ -20,5 +20,12 @@ return {
       enabled = true,
       size = 10 * 1024 * 1024, -- 10MB
     },
+    picker = {
+      sources = {
+        grep = {
+          hidden = true,
+        },
+      },
+    },
   },
 }
