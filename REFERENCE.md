@@ -63,12 +63,18 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader>ghs` - Stage hunk (stage just this change)  
 `<leader>ghr` - Reset hunk (discard this change)  
 `<leader>ghp` - Preview hunk (show diff in float)  
+`<C-b>` - Opens PR in browser on Octo list or with PR buffer active
+
+### Octo
+
 `:Octo pr list` - List GitHub pull requests  
 `:Octo pr view` - View current PR in buffer  
 `:Octo pr comments` - Show PR comments
 `:Octo review start` - Start a PR review
 `:Octo review submit` - Submit a PR review with ability to add a final comment
-`<C-b>` - Opens PR in browser on Octo list or with PR buffer active
+`<localleader><space>` - Mark a file as viewed
+`zo` - Open (unfold) a collapsed section
+`za` - Toggle section open or closed
 
 ## Search and Replace
 
@@ -122,19 +128,20 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader>bd` - Delete current buffer  
 `<leader>bo` - Delete all buffers except current  
 `<leader>bp` - Pin/unpin buffer (prevent accidental close)
+`Xgt` - Go to tab X, example `1gt`
 
 ## Marks
 
 `ma` - Set a file-local mark "a"
 `mA` - Set a global mark "A"
 `carat-a` - Jump to mark "a"
-`:delm a`  - delete mark "a"
+`:delm a` - delete mark "a"
 `:marks` - See all marks
 
 ## Jump List
 
 `<C-o>` - Jump to last cursor location
-`<C-i>` - Jump  to next cursor location
+`<C-i>` - Jump to next cursor location
 
 ## Debugging (DAP) - Optional
 
@@ -167,7 +174,7 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader>ur` - Toggle relative line numbers  
 `<leader>uw` - Toggle word wrap  
 `<leader>ul` - Toggle line numbers  
-`<leader>us` - Toggle spelling  
+`<leader>us` - Toggle spelling
 
 ## Leader Key
 
@@ -176,7 +183,7 @@ The `<leader>` key is `<Space>` by default in LazyVim.
 ## Special Keys
 
 - `<C-x>` = Ctrl+x
-- `<S-x>` = Shift+x  
+- `<S-x>` = Shift+x
 - `<leader>` = Space (by default)
 - `<localleader>` = \
 - `<CR>` = Enter/Return
@@ -217,6 +224,7 @@ Plugins are installed here: `~/.local/share/nvim/lazy`.
 ## Project-Specific Workflows
 
 ### Editing Go Handler
+
 1. `<leader>ff` → type handler name → Enter
 2. `gd` on function to jump to definition
 3. `K` to see function documentation
@@ -224,6 +232,7 @@ Plugins are installed here: `~/.local/share/nvim/lazy`.
 5. `:w` to save (or just switch to browser - auto-save)
 
 ### Editing templ Template
+
 1. `<leader>e` to open file tree
 2. Navigate to `internal/templates/`
 3. Edit HTML/Go code with full syntax highlighting
@@ -231,6 +240,7 @@ Plugins are installed here: `~/.local/share/nvim/lazy`.
 5. `K` on Go variable to see type info
 
 ### Testing Workflow
+
 1. `<leader>gg` to open lazygit
 2. Review changes with `]h` and `[h`
 3. `<leader>ghs` to stage specific hunks
@@ -238,6 +248,7 @@ Plugins are installed here: `~/.local/share/nvim/lazy`.
 5. `:Octo pr create` to make PR
 
 ### Database Debugging
+
 1. `:DBUIToggle` to open database UI
 2. `o` to expand climb_tracker database
 3. Navigate to table, press `o` to view data
