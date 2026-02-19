@@ -75,6 +75,8 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<localleader><space>` - Mark a file as viewed
 `zo` - Open (unfold) a collapsed section
 `za` - Toggle section open or closed
+`<localleader>ca` - Add comment
+`<localleader>sa` - Add suggestion
 
 ## Search and Replace
 
@@ -105,6 +107,7 @@ Essential keybindings for climb-tracker development. Assumes basic vim knowledge
 `<leader>xq` - Toggle quickfix list  
 `]q` - Next quickfix item  
 `[q` - Previous quickfix item
+`:messages` - View the error messages from plugins that are logged
 
 ## Terminal
 
