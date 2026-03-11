@@ -21,8 +21,12 @@ return {
       size = 10 * 1024 * 1024, -- 10MB
     },
     picker = {
+      hidden = true, -- show hidden files
       sources = {
         grep = {
+          hidden = true,
+        },
+        files = {
           hidden = true,
         },
       },
